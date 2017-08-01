@@ -15,6 +15,7 @@
     <module>web</module>
     <module>eureka</module>
     <module>manage</module>
+    <module>gateway</module>
   </modules>
 
   <properties>

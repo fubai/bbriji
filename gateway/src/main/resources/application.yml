@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: bbriji-gateway
+
+server:
+  port: 5555
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka/
+zuul:
+  routes:
+    api-a-url:
+      path: /manage/**
+      serviceId: BBRIJI-MANAGE
+    api-b-url:
+      path: /website/**
+      serviceId: BBRIJI-WEBSITE
