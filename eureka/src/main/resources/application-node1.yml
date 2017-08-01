@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: bbriji-server-register-center
+
+server:
+  port: 1111
+
+eureka:
+  client:
+    register-with-eureka: false # 是否注册到eureka
+    fetch-registry: false # 是否从eureka获取注册信息
+    service-url:
+      defaultZone: http://localhost:1112/eureka/,http://localhost:1113/eureka/

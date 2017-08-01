@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: bbriji-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/fubai/bbriji
+          search-paths: config/config-repo
+          username: username
+          password: password
+
+server:
+  port: 4444
+
